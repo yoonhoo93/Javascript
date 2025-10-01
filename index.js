@@ -1,4 +1,4 @@
-let a = 10;
+/* let a = 10; */
 let b = 20;
 
 a += 1;
@@ -94,3 +94,23 @@ function ex2(num) {
 }
 
 console.log(ex2(5));
+
+const a = 10;
+function sum(b) {
+    return a + b;
+}
+console.log(sum(5)); // 출력 값은 ? -> 15
+
+function multiple(c) {
+    return sum(5) * c;
+}
+console.log(multiple(4)); // 출력 값은 ? -> 60
+
+function division(d) {
+    const a = 4;
+    function inner(e) {
+        return a / e;
+    }
+    return inner(d);
+}
+console.log(division(2)); // 출력 값은? -> 2
