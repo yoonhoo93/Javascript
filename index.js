@@ -247,3 +247,60 @@ function Person(name, age) {
 const person2 = new Person("yoonhoo", 23);
 
 console.log(person2.introduce());
+
+let string2 = "admin";
+
+console.log(string2.toUpperCase());
+
+function validUpperCase(value) {
+    if (value.length > 8) {
+        value = value.substr(0, 7);
+    }
+
+    console.log(test.toUpperCase());
+}
+
+validUpperCase("admin");
+validUpperCase("hi hello nice to meet you");
+validUpperCase("my name is yoonhoo");
+
+let num1 = 10;
+let num2 = 12.345;
+/* 
+    1. 매개변수를 넣지않으면 소수점을 제외하고 표현
+    2. toFixed 안에 매개변수로 숫자를 넣으면 그만큼 소수점을 표현한다.
+    3. 숫자 2를 넣었다 가정했을때 소수점 3자리에서 반올림 여부를 판단 후 2번째 자리까지 표현
+ */
+console.log(num1.toFixed());
+console.log(num2.toFixed());
+
+function validInteger(value) {
+    if (Number.isInteger(value)) {
+        return value;
+    } else {
+        return 0;
+    }
+}
+
+let res1 = validInteger(10.11);
+console.log(typeof res1);
+let res2 = validInteger(10);
+console.log(typeof res2);
+
+function loTToCard() {
+    var lotto = [];
+    while (lotto.length < 6) {
+        var num = parseInt(Math.random() * 45 + 1);
+        if (lotto.indexOf(num) == -1) {
+            lotto.push(num);
+        }
+    }
+    lotto.sort((a, b) => a - b);
+}
+
+let test112 = loTToCard();
+console.log(test112);
+
+console.log(parseInt(Math.random() * 45 + 1));
+
+window.open();
