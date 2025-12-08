@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <button onclick="popup()">버튼</button>
-    
-    <script>
-        function popup() {
-            open("http://naver.com", "네이버", "width=500, height=300")
-        }
-        
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./getElement.js" />
+    </head>
+    <body>
+        <button onclick="popup()">버튼</button>
 
-    </script>
+        <h1 id="title">title</h1>
+        <p class="desc">1</p>
+        <p class="desc">2</p>
+        <a href="#">링크</a>
 
+        <a href="#">area1</a>
+        <a href="#">area2</a>
 
-</body>
+        <form name="frm">
+            <input type="text" />
+            <input type="password" />
+        </form>
+        <form name="frm2">
+            <input type="text" />
+            <input type="password" />
+        </form>
+
+        <script>
+            function popup() {
+                open("http://naver.com", "네이버", "width=500, height=300");
+            }
+        </script>
+    </body>
 </html>
