@@ -4,32 +4,48 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <link rel="stylesheet" href="./getElement.js" />
     </head>
     <body>
         <button onclick="popup()">버튼</button>
-
+        
         <h1 id="title">title</h1>
-        <p class="desc">1</p>
-        <p class="desc">2</p>
+        <p class="desc" onclick="onclick1()">1</p>
+        <p class="desc zmfflr">2</p>
         <a href="#">링크</a>
-
+        
         <a href="#">area1</a>
         <a href="#">area2</a>
-
+        
         <form name="frm">
             <input type="text" />
             <input type="password" />
         </form>
         <form name="frm2">
-            <input type="text" />
+            <input type="text" /> 
             <input type="password" />
         </form>
-
-        <script>
-            function popup() {
-                open("http://naver.com", "네이버", "width=500, height=300");
-            }
-        </script>
+        
+        <div class='box-1'>
+            <h1>h1 tag</h1>
+            <h2>h2 tag</h2>
+        </div>
+        <div class='box-2'>
+            <h3>h3 tag</h3>
+        </div>
+        
+        <a href="http://www.naver.com">구글</a>
+        
+        <div class="date">10:22:00</div>
+        
+        <img src="https://placehold.co/300x300" alt="" class="img" onclick="onImg()">
+        
     </body>
+    <script>
+        
+        let el = document.querySelector("a")
+        el.href = "http://google.com"
+        
+        </script>
+        <script src="./event.js"></script>
+ 
 </html>

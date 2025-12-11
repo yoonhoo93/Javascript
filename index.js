@@ -303,4 +303,6 @@ console.log(test112);
 
 console.log(parseInt(Math.random() * 45 + 1));
 
-window.open();
+function popup() {
+    open("http://naver.com", "네이버", "width=500, height=300");
+}
